@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "minimal-repo-voice",
+    "name": "Voice",
     "slug": "minimal-repo-voice",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -22,22 +20,22 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "permissions": [
-        "android.permission.RECORD_AUDIO"
-      ],
-      "package": "com.pedrol2b.minimalrepovoice"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "permissions": ["android.permission.RECORD_AUDIO"],
+      "package": "com.minimal.voice"
     },
     "plugins": [
       [
         "@react-native-voice/voice",
         {
-          "microphonePermission": "CUSTOM: Allow $(PRODUCT_NAME) to access the microphone",
-          "speechRecognitionPermission": "CUSTOM: Allow $(PRODUCT_NAME) to securely recognize user speech"
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access the microphone",
+          "speechRecognitionPermission": "Allow $(PRODUCT_NAME) to securely recognize user speech"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c9459bae-ed1e-40d0-8a0e-1ae91cfc6c7d"
+      }
+    }
   }
 }
